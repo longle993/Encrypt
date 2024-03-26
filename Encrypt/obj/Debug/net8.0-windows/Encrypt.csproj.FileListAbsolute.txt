@@ -14,3 +14,4 @@ D:\Long Le\Encrypt\Encrypt\obj\Debug\net8.0-windows\refint\Encrypt.dll
 D:\Long Le\Encrypt\Encrypt\obj\Debug\net8.0-windows\Encrypt.pdb
 D:\Long Le\Encrypt\Encrypt\obj\Debug\net8.0-windows\Encrypt.genruntimeconfig.cache
 D:\Long Le\Encrypt\Encrypt\obj\Debug\net8.0-windows\ref\Encrypt.dll
+D:\Long Le\Encrypt\Encrypt\obj\Debug\net8.0-windows\Encrypt.sourcelink.json

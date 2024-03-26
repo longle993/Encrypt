@@ -73,6 +73,7 @@
             txtKey_Encrypt = new TextBox();
             label12 = new Label();
             VigenereTab = new TabPage();
+            dataVigenereTable = new DataGridView();
             txtResult_Vigenere = new TextBox();
             btnDecryptVigenere = new Button();
             btnEncryptVigenere = new Button();
@@ -116,7 +117,15 @@
             txtKeyOTP = new TextBox();
             label19 = new Label();
             RailfenceTab = new TabPage();
-            dataVigenereTable = new DataGridView();
+            label38 = new Label();
+            label37 = new Label();
+            panel_RailFence = new Panel();
+            txtResult_RailFence = new TextBox();
+            btnDecryptRailfence = new Button();
+            btnEncryptRailfence = new Button();
+            txtDepth = new TextBox();
+            label36 = new Label();
+            txtPlainTextRailfence = new TextBox();
             TabControl.SuspendLayout();
             CaesarTab.SuspendLayout();
             panel2.SuspendLayout();
@@ -125,11 +134,12 @@
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
             VigenereTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataVigenereTable).BeginInit();
             PlayfairTab.SuspendLayout();
             OTPTab.SuspendLayout();
             panel4.SuspendLayout();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataVigenereTable).BeginInit();
+            RailfenceTab.SuspendLayout();
             SuspendLayout();
             // 
             // TabControl
@@ -624,6 +634,15 @@
             VigenereTab.Text = "Vigenere";
             VigenereTab.UseVisualStyleBackColor = true;
             // 
+            // dataVigenereTable
+            // 
+            dataVigenereTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataVigenereTable.Location = new Point(46, 238);
+            dataVigenereTable.Name = "dataVigenereTable";
+            dataVigenereTable.RowHeadersWidth = 51;
+            dataVigenereTable.Size = new Size(951, 368);
+            dataVigenereTable.TabIndex = 21;
+            // 
             // txtResult_Vigenere
             // 
             txtResult_Vigenere.BackColor = Color.White;
@@ -1069,6 +1088,15 @@
             // 
             // RailfenceTab
             // 
+            RailfenceTab.Controls.Add(label38);
+            RailfenceTab.Controls.Add(label37);
+            RailfenceTab.Controls.Add(panel_RailFence);
+            RailfenceTab.Controls.Add(txtResult_RailFence);
+            RailfenceTab.Controls.Add(btnDecryptRailfence);
+            RailfenceTab.Controls.Add(btnEncryptRailfence);
+            RailfenceTab.Controls.Add(txtDepth);
+            RailfenceTab.Controls.Add(label36);
+            RailfenceTab.Controls.Add(txtPlainTextRailfence);
             RailfenceTab.Location = new Point(4, 29);
             RailfenceTab.Name = "RailfenceTab";
             RailfenceTab.Padding = new Padding(3);
@@ -1077,14 +1105,91 @@
             RailfenceTab.Text = "Rail fence";
             RailfenceTab.UseVisualStyleBackColor = true;
             // 
-            // dataVigenereTable
+            // label38
             // 
-            dataVigenereTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataVigenereTable.Location = new Point(46, 238);
-            dataVigenereTable.Name = "dataVigenereTable";
-            dataVigenereTable.RowHeadersWidth = 51;
-            dataVigenereTable.Size = new Size(951, 368);
-            dataVigenereTable.TabIndex = 21;
+            label38.AutoSize = true;
+            label38.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label38.Location = new Point(50, 193);
+            label38.Name = "label38";
+            label38.Size = new Size(61, 23);
+            label38.TabIndex = 26;
+            label38.Text = "Depth:";
+            // 
+            // label37
+            // 
+            label37.AutoSize = true;
+            label37.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label37.Location = new Point(407, 19);
+            label37.Name = "label37";
+            label37.Size = new Size(205, 31);
+            label37.TabIndex = 25;
+            label37.Text = "Mã hoá Rail fence";
+            // 
+            // panel_RailFence
+            // 
+            panel_RailFence.Location = new Point(213, 299);
+            panel_RailFence.Name = "panel_RailFence";
+            panel_RailFence.Size = new Size(652, 268);
+            panel_RailFence.TabIndex = 24;
+            // 
+            // txtResult_RailFence
+            // 
+            txtResult_RailFence.BackColor = Color.White;
+            txtResult_RailFence.Font = new Font("Segoe UI", 10F);
+            txtResult_RailFence.Location = new Point(634, 115);
+            txtResult_RailFence.Multiline = true;
+            txtResult_RailFence.Name = "txtResult_RailFence";
+            txtResult_RailFence.ReadOnly = true;
+            txtResult_RailFence.Size = new Size(348, 156);
+            txtResult_RailFence.TabIndex = 23;
+            // 
+            // btnDecryptRailfence
+            // 
+            btnDecryptRailfence.Location = new Point(419, 229);
+            btnDecryptRailfence.Name = "btnDecryptRailfence";
+            btnDecryptRailfence.Size = new Size(170, 42);
+            btnDecryptRailfence.TabIndex = 22;
+            btnDecryptRailfence.Text = "Decrypt";
+            btnDecryptRailfence.UseVisualStyleBackColor = true;
+            btnDecryptRailfence.Click += btnDecryptRailfence_Click;
+            // 
+            // btnEncryptRailfence
+            // 
+            btnEncryptRailfence.Location = new Point(419, 115);
+            btnEncryptRailfence.Name = "btnEncryptRailfence";
+            btnEncryptRailfence.Size = new Size(170, 42);
+            btnEncryptRailfence.TabIndex = 21;
+            btnEncryptRailfence.Text = "Encrypt";
+            btnEncryptRailfence.UseVisualStyleBackColor = true;
+            btnEncryptRailfence.Click += btnEncryptRailfence_Click;
+            // 
+            // txtDepth
+            // 
+            txtDepth.Font = new Font("Segoe UI", 10F);
+            txtDepth.Location = new Point(50, 219);
+            txtDepth.Multiline = true;
+            txtDepth.Name = "txtDepth";
+            txtDepth.Size = new Size(342, 52);
+            txtDepth.TabIndex = 20;
+            // 
+            // label36
+            // 
+            label36.AutoSize = true;
+            label36.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label36.Location = new Point(50, 79);
+            label36.Name = "label36";
+            label36.Size = new Size(85, 23);
+            label36.TabIndex = 19;
+            label36.Text = "Plain text:";
+            // 
+            // txtPlainTextRailfence
+            // 
+            txtPlainTextRailfence.Font = new Font("Segoe UI", 10F);
+            txtPlainTextRailfence.Location = new Point(50, 105);
+            txtPlainTextRailfence.Multiline = true;
+            txtPlainTextRailfence.Name = "txtPlainTextRailfence";
+            txtPlainTextRailfence.Size = new Size(342, 52);
+            txtPlainTextRailfence.TabIndex = 18;
             // 
             // Form1
             // 
@@ -1110,6 +1215,7 @@
             groupBox1.PerformLayout();
             VigenereTab.ResumeLayout(false);
             VigenereTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataVigenereTable).EndInit();
             PlayfairTab.ResumeLayout(false);
             PlayfairTab.PerformLayout();
             OTPTab.ResumeLayout(false);
@@ -1118,7 +1224,8 @@
             panel4.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataVigenereTable).EndInit();
+            RailfenceTab.ResumeLayout(false);
+            RailfenceTab.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -1213,5 +1320,14 @@
         private Label label35;
         private TextBox txtPlainTextVigenere;
         private DataGridView dataVigenereTable;
+        private Label label38;
+        private Label label37;
+        private Panel panel_RailFence;
+        private TextBox txtResult_RailFence;
+        private Button btnDecryptRailfence;
+        private Button btnEncryptRailfence;
+        private TextBox txtDepth;
+        private Label label36;
+        private TextBox txtPlainTextRailfence;
     }
 }

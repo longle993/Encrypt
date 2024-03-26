@@ -210,9 +210,28 @@ namespace Encrypt
             txtPlainTextOTP.Text = this.oneTimePad.DecryptOTP(txtCipherTextOTP.Text);
         }
         #endregion
+        #region RailFence
+        private void btnEncryptRailfence_Click(object sender, EventArgs e)
+        {
+            panel_RailFence.Controls.Clear();
+            RailFence railFence = new RailFence(int.Parse(txtDepth.Text));
+            string x = railFence.Encrypt(txtPlainTextRailfence.Text);
+            txtResult_RailFence.Text = x;
+            CreateGrid(panel_RailFence, railFence.railfenceMatrix);
+        }
+
+        private void btnDecryptRailfence_Click(object sender, EventArgs e)
+        {
+            panel_RailFence.Controls.Clear();
+            RailFence railFence = new RailFence(int.Parse(txtDepth.Text));
+            string x = railFence.Decrypt(txtPlainTextRailfence.Text);
+            txtResult_RailFence.Text = x;
+            CreateGrid(panel_RailFence, railFence.railfenceMatrix);
+        }
+        #endregion
 
 
 
-        
+
     }
 }
