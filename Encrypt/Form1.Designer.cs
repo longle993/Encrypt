@@ -169,7 +169,7 @@
             CaesarTab.Location = new Point(4, 29);
             CaesarTab.Name = "CaesarTab";
             CaesarTab.Padding = new Padding(3);
-            CaesarTab.Size = new Size(1033, 614);
+            CaesarTab.Size = new Size(1033, 740);
             CaesarTab.TabIndex = 0;
             CaesarTab.Text = "Caesar";
             CaesarTab.UseVisualStyleBackColor = true;
@@ -391,7 +391,7 @@
             MonoalphabeticTab.Location = new Point(4, 29);
             MonoalphabeticTab.Name = "MonoalphabeticTab";
             MonoalphabeticTab.Padding = new Padding(3);
-            MonoalphabeticTab.Size = new Size(1033, 614);
+            MonoalphabeticTab.Size = new Size(1033, 740);
             MonoalphabeticTab.TabIndex = 1;
             MonoalphabeticTab.Text = "Đơn bảng";
             MonoalphabeticTab.UseVisualStyleBackColor = true;
@@ -600,9 +600,9 @@
             // txtKey_Encrypt
             // 
             txtKey_Encrypt.Font = new Font("Segoe UI", 10F);
-            txtKey_Encrypt.Location = new Point(111, 275);
+            txtKey_Encrypt.Location = new Point(133, 275);
             txtKey_Encrypt.Name = "txtKey_Encrypt";
-            txtKey_Encrypt.Size = new Size(275, 30);
+            txtKey_Encrypt.Size = new Size(284, 30);
             txtKey_Encrypt.TabIndex = 6;
             // 
             // label12
@@ -736,7 +736,7 @@
             PlayfairTab.Location = new Point(4, 29);
             PlayfairTab.Name = "PlayfairTab";
             PlayfairTab.Padding = new Padding(3);
-            PlayfairTab.Size = new Size(1033, 614);
+            PlayfairTab.Size = new Size(1033, 740);
             PlayfairTab.TabIndex = 3;
             PlayfairTab.Text = "Playfair";
             PlayfairTab.UseVisualStyleBackColor = true;
@@ -835,7 +835,7 @@
             OTPTab.Location = new Point(4, 29);
             OTPTab.Name = "OTPTab";
             OTPTab.Padding = new Padding(3);
-            OTPTab.Size = new Size(1033, 614);
+            OTPTab.Size = new Size(1033, 740);
             OTPTab.TabIndex = 4;
             OTPTab.Text = "OneTimePad";
             OTPTab.UseVisualStyleBackColor = true;
@@ -1100,7 +1100,7 @@
             RailfenceTab.Location = new Point(4, 29);
             RailfenceTab.Name = "RailfenceTab";
             RailfenceTab.Padding = new Padding(3);
-            RailfenceTab.Size = new Size(1033, 614);
+            RailfenceTab.Size = new Size(1033, 740);
             RailfenceTab.TabIndex = 5;
             RailfenceTab.Text = "Rail fence";
             RailfenceTab.UseVisualStyleBackColor = true;

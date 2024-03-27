@@ -87,11 +87,13 @@ namespace Encrypt.Encrypt
             }
             railfenceMatrix = fence;
             row = 0; col = 0;
+            down = false;
             for (int i = 0; i < cipherText.Length; i++)
             {
                 if (row == 0 || row == Depth - 1)
                     down = !down;
-                plainText += fence[row, col++];
+                if (fence[row,col] != '*')
+                    plainText += fence[row, col++];
                 if (down) row++;
                 else row--;
             }

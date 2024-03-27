@@ -8,9 +8,13 @@ namespace Encrypt.Encrypt
 {
     public class Caesar
     {
+        //Vị trí dời
         private int k;
+        //Bảng chữ cái
         private string[] alphabet = new string[26];
+        //Bảng chữ cái sau khi dời sang k vị trí
         private string[] alphabetDecrypt = new string[26];
+
         public Caesar()
         {
             GenerateAlphabet();

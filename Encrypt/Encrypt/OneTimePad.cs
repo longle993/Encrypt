@@ -8,12 +8,19 @@ namespace Encrypt.Encrypt
 {
     public class OneTimePad
     {
+        //Văn bản gốc
         private string plainText;
+        //Khoá
         private string keyword;
+        //Bảng chữ cái
         private string[] alphabet = new string[26];
+        //Khoá sau khi điều chỉnh lại cho hợp lệ
         private string[] formatKeyword;
+        //Vị trí của các chữ cái trong plaintext
         private int[] indexPlainText;
+        //Vị trí của các chữ cái trong keyword
         private int[] indexKeyword;
+
 
         public string[] Alphabet { get => alphabet; }
         public string[] FormatKeyword { get => formatKeyword; }
@@ -41,16 +48,26 @@ namespace Encrypt.Encrypt
             {
                 for (int i = 0; i < plainText.Length; i++)
                     formatKeyword[i] += keyword[i];
+
+                
             }
             else if (plainText.Length > keyword.Length)
             {
+                //Cách 1
                 for (int i = 0; i < plainText.Length; i++)
+                {
+                    int keywordIndex = i % keyword.Length;
+                    formatKeyword[i] = keyword[keywordIndex].ToString();
+                }
+
+                //Cách 2
+                /*for (int i = 0; i < plainText.Length; i++)
                 {
                     if (i < keyword.Length)
                         formatKeyword[i] = keyword[i].ToString();
                     else
                         formatKeyword[i] = plainText[i - keyword.Length].ToString();
-                }
+                }*/
             }
 
             //Mã hoá
