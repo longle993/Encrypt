@@ -103,7 +103,13 @@ namespace Encrypt.Encrypt
             for(int i = 0; i < indexPlainText.Length; i++)
             {
                 if (indexPlainText[i] != -1)
-                    plainText += alphabet[indexPlainText[i]];
+                {
+                    if (indexPlainText[i] < 0)
+                        plainText += alphabet[alphabet.Length + indexPlainText[i]];
+                    else
+                        plainText += alphabet[indexPlainText[i]];
+                }
+                    
                 else
                     plainText += cipherText[i];
             }

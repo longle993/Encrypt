@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Long Le\\Encrypt\\Encrypt\\Encrypt.csproj": {}
+    "D:\\Long Le\\Code quá 180'\\Encrypt\\Encrypt\\Encrypt.csproj": {}
   },
   "projects": {
-    "D:\\Long Le\\Encrypt\\Encrypt\\Encrypt.csproj": {
+    "D:\\Long Le\\Code quá 180'\\Encrypt\\Encrypt\\Encrypt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Long Le\\Encrypt\\Encrypt\\Encrypt.csproj",
+        "projectUniqueName": "D:\\Long Le\\Code quá 180'\\Encrypt\\Encrypt\\Encrypt.csproj",
         "projectName": "Encrypt",
-        "projectPath": "D:\\Long Le\\Encrypt\\Encrypt\\Encrypt.csproj",
+        "projectPath": "D:\\Long Le\\Code quá 180'\\Encrypt\\Encrypt\\Encrypt.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Long Le\\Encrypt\\Encrypt\\obj\\",
+        "outputPath": "D:\\Long Le\\Code quá 180'\\Encrypt\\Encrypt\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

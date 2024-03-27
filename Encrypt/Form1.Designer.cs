@@ -154,7 +154,7 @@
             TabControl.Location = new Point(0, 0);
             TabControl.Name = "TabControl";
             TabControl.SelectedIndex = 0;
-            TabControl.Size = new Size(1041, 647);
+            TabControl.Size = new Size(1041, 773);
             TabControl.TabIndex = 0;
             // 
             // CaesarTab
@@ -629,18 +629,18 @@
             VigenereTab.Location = new Point(4, 29);
             VigenereTab.Name = "VigenereTab";
             VigenereTab.Padding = new Padding(3);
-            VigenereTab.Size = new Size(1033, 614);
+            VigenereTab.Size = new Size(1033, 740);
             VigenereTab.TabIndex = 2;
             VigenereTab.Text = "Vigenere";
             VigenereTab.UseVisualStyleBackColor = true;
             // 
             // dataVigenereTable
             // 
-            dataVigenereTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataVigenereTable.ColumnHeadersHeight = 29;
             dataVigenereTable.Location = new Point(46, 238);
             dataVigenereTable.Name = "dataVigenereTable";
             dataVigenereTable.RowHeadersWidth = 51;
-            dataVigenereTable.Size = new Size(951, 368);
+            dataVigenereTable.Size = new Size(951, 479);
             dataVigenereTable.TabIndex = 21;
             // 
             // txtResult_Vigenere
@@ -1195,7 +1195,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1041, 647);
+            ClientSize = new Size(1041, 773);
             Controls.Add(TabControl);
             DoubleBuffered = true;
             Name = "Form1";
